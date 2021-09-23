@@ -23,7 +23,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: sumo300/chocolatey-nerd-fonts
   github_api_key:
-    secure: GQhV+LFIZHz1FySTmcwca8LAp+v5UiwuvsD+tC0D3uOB68tV9GQtF147Z9ksSRaD #https://ci.appveyor.com/tools/encrypt
+    secure: IxVHoJe+BV2Ce9bBA2Bb1/5R16GMCrT5CPkm0wWeJ/jYKxxg4Dalqny7RI8N6k8h #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
