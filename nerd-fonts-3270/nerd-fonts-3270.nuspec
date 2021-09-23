@@ -9,7 +9,7 @@
     <authors>ryanoasis</authors>
     <licenseUrl>https://github.com/ryanoasis/nerd-fonts/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/ryanoasis/nerd-fonts</projectUrl>
-    <iconUrl>https://github.com/ryanoasis/nerd-fonts/raw/master/images/nerd-fonts-logo.svg</iconUrl>
+    <iconUrl>https://www.nerdfonts.com/assets/img/nerd-fonts-logo.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
 Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as Font Awesome ➶, Devicons ➶, Octicons ➶, and others.
