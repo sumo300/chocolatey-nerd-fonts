@@ -10,8 +10,8 @@ image: Visual Studio 2017
 branches:
   only:
   - master
-#build:
-#  verbosity: minimal
+build:
+  verbosity: detailed
 
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
@@ -37,10 +37,10 @@ environment:
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id: sumo300/658441c4e182965a9488e81886b0c549
+  gist_id: 658441c4e182965a9488e81886b0c549
 
   # Force test: gist id for test results
-  gist_id_test: sumo300/170114d83bea64633a4f8897090c6a13
+  gist_id_test: 170114d83bea64633a4f8897090c6a13
 
   # Chocolatey API key - to push updated packages
   api_key:
