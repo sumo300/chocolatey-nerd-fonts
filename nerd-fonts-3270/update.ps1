@@ -1,7 +1,7 @@
 import-module au
 . $PSScriptRoot\..\_scripts\all.ps1
 
-$releases    = 'https://github.com/ryanoasis/nerd-fonts/releases'
+$releases = 'https://github.com/ryanoasis/nerd-fonts/releases'
 
 function global:au_SearchReplace {
     @{
