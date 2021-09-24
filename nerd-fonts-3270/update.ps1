@@ -2,6 +2,7 @@ import-module au
 . $PSScriptRoot\..\_scripts\all.ps1
 
 $releases = 'https://github.com/ryanoasis/nerd-fonts/releases'
+$readmes = 'https://raw.githubusercontent.com/ryanoasis/nerd-fonts/{0}/patched-fonts/{1}/readme.md'
 
 function global:au_SearchReplace {
     @{
@@ -24,6 +25,15 @@ function global:au_GetLatest {
     $url = 'https://github.com' + $url
 
     $version = $url -split '/' | Select-Object -Last 1 -Skip 1
+    $version = $version.Replace('v','')
+
+    # Download readme
+    try {
+        $readmeUri = $readmes -f $version.Replace('v',''), $fontName
+        Invoke-WebRequest -Uri $readmeUri -OutFile $(Join-Path -Path $PSScriptRoot -ChildPath "README.md")
+    } catch {
+        # Ignore any errors
+    }
 
     return @{
         URL32        = $url
