@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
-function global:au_AfterUpdate  { }
+function global:au_AfterUpdate  { Set-DescriptionFromReadme -SkipFirst 2 }
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
@@ -31,7 +31,7 @@ function global:au_GetLatest {
     # Download readme
     try {
         $readmeUri = $readmes -f $version.Replace('v',''), $fontName
-        Invoke-WebRequest -Uri $readmeUri -OutFile $(Join-Path -Path $PSScriptRoot -ChildPath "README.md")
+        Invoke-WebRequest -Uri $readmeUri -OutFile $(Join-Path -Path $PSScriptRoot -ChildPath "FONT-README.md")
     } catch {
         # Ignore any errors
     }
