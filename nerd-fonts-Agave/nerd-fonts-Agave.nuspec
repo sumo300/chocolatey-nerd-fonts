@@ -2,16 +2,17 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>nerd-fonts-3270</id>
-    <version>2.1.0</version>
-    <title>Nerd Fonts - 3270</title>
+    <id>nerd-fonts-Agave</id>
+    <version>1.0.0</version>
+    <title>Nerd Fonts - Agave</title>
     <owners>sumo300</owners>
     <authors>ryanoasis</authors>
     <licenseUrl>https://github.com/ryanoasis/nerd-fonts/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/ryanoasis/nerd-fonts</projectUrl>
     <iconUrl>https://www.nerdfonts.com/assets/img/nerd-fonts-logo.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as Font Awesome ➶, Devicons ➶, Octicons ➶, and others.</description>
+    <description>
+</description>
     <summary>Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons).</summary>
     <releaseNotes>https://github.com/ryanoasis/nerd-fonts/releases</releaseNotes>
     <copyright />

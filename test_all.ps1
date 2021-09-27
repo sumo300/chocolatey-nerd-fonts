@@ -66,11 +66,6 @@ $options = [ordered]@{
     }
 }
 
-[System.Net.ServicePointManager]::SecurityProtocol = 3072 -bor
-  768 -bor
-  [System.Net.SecurityProtocolType]::Tls -bor
-  [System.Net.SecurityProtocolType]::Ssl3
-
 $global:info = updateall -Name $Name -Options $Options
 
 $au_errors = $global:info | ? { $_.Error } | select -ExpandProperty Error
