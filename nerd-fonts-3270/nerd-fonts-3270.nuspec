@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nerd-fonts-3270</id>
-    <version>2.1.0</version>
+    <version>2.1.0.1</version>
     <title>Nerd Fonts - 3270</title>
     <owners>sumo300</owners>
     <authors>ryanoasis</authors>

@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = $env:ChocolateyPackageName
-$toolsDir      = Split-Path $MyInvocation.MyCommand.Definition
+$toolsDir = Get-ToolsLocation
 
 $packageArgs = @{
   softwareName   = $packageName
@@ -23,9 +23,7 @@ if ($fontList.Count -le 0) {
   $fontList = Get-ChildItem *.ttf
 }
 
-Install-ChocolateyFont -Paths $fontList -Multiple
-
-## Keep track of font names to use later for uninstall
-$fontList | Select-Object Name > installedFonts.txt
+$installCount = Install-ChocolateyFont -Paths $fontList -Multiple
+Write-Host "$installCount fonts installed"
 
 Pop-Location
