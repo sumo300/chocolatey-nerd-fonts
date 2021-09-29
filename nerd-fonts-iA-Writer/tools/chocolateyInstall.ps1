@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = ''
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/iA-Writer.zip'
   checksumType   = 'sha256'
-  checksum       = ''
+  checksum       = '9F18AD9964AC0A09EC321B6D1CA68A25E4C1B2A019B575032B9B75C37BD69332'
 }
 
 Install-ChocolateyZipPackage @packageArgs
