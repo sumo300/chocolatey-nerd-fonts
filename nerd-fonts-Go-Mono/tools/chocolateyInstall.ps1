@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = ''
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/InconsolataGo.zip'
   checksumType   = 'sha256'
-  checksum       = ''
+  checksum       = 'B5483ADE3759FDCAB372DAB143347E4A021F2D16442BE9A96A0235414487DE30'
 }
 
 Install-ChocolateyZipPackage @packageArgs

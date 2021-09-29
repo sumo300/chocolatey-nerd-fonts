@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = ''
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/ProggyClean.zip'
   checksumType   = 'sha256'
-  checksum       = ''
+  checksum       = '0F4593764B7CADB3B3462D1D60D3A3AB647D8C47DFEC4ED25E3618F9CD7C636A'
 }
 
 Install-ChocolateyZipPackage @packageArgs
