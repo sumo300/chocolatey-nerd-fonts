@@ -24,7 +24,7 @@ function global:au_AfterUpdate  { Set-DescriptionFromReadme -SkipFirst 2 -SkipLa
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
-    $fontName = (get-item $pwd).Name.Split('-')[2]
+    $fontname = (get-item $pwd).Name -replace 'nerd-fonts-', ''
     $re  = $fontName + ".zip"
     $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
     $url = 'https://github.com' + $url
