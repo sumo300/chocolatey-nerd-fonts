@@ -10,6 +10,10 @@ function global:au_SearchReplace {
              "(?i)(^\s*url\s*=\s*)('.*')"        = "`$1'$($Latest.URL32)'"
              "(?i)(^\s*checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
          }
+
+         "$($Latest.PackageName).nuspec" = @{
+            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
      }
  }
 
