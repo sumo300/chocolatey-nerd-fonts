@@ -26,6 +26,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" exclude="*.zip" />
+    <file src="tools\**" target="tools" exclude="tools\*.zip" />
   </files>
 </package>
