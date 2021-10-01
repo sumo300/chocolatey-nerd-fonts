@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = $env:ChocolateyPackageName
-$toolsDir    = Get-ToolsLocation
+$toolsDir    = $PSScriptRoot
 
 $packageArgs = @{
   softwareName   = $packageName
