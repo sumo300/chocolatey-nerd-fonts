@@ -23,6 +23,7 @@ if ($fontList.Count -le 0) {
   $fontList = Get-ChildItem *.ttf
 }
 
+# Installs fonts in Paths list and keeps track of the list for uninstall later
 $installCount = Install-ChocolateyFont -Paths $fontList -Multiple
 Write-Host "$installCount fonts installed"
 
