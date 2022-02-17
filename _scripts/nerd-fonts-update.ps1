@@ -28,7 +28,7 @@ function Get-NerdFontLatest([string]$Path) {
     # Download readme
     try {
         $readmeUri = $readmes -f $version.Replace('v',''), $fontName
-        Invoke-WebRequest -Uri $readmeUri -OutFile $(Join-Path -Path $PSScriptRoot -ChildPath "FONT-README.md")
+        Invoke-WebRequest -Uri $readmeUri -OutFile $(Join-Path -Path $Path -ChildPath "FONT-README.md")
     } catch {
         # Ignore any errors
     }
