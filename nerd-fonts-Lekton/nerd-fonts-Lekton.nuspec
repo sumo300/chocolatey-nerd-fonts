@@ -19,8 +19,8 @@
     <copyright />
     <tags>nerd fonts glyphs icons ligatures</tags>
     <packageSourceUrl>https://github.com/sumo300/chocolatey-nerd-fonts</packageSourceUrl>
-    <projectSourceUrl>https://github.com/sumo300/chocolatey-nerd-fonts</projectSourceUrl>
-    <docsUrl>https://github.com/sumo300/chocolatey-nerd-fonts</docsUrl>
+    <projectSourceUrl>https://github.com/ryanoasis/nerd-fonts</projectSourceUrl>
+    <docsUrl>https://github.com/ryanoasis/nerd-fonts</docsUrl>
     <dependencies>
       <dependency id="chocolatey-font-helpers.extension" version="0.0.4" />
     </dependencies>
