@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/UbuntuMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/2.2.0-RC/UbuntuMono.zip'
   checksumType   = 'sha256'
-  checksum       = '1034658826A4561A1FF460AA4261B5F47E8B201601619242E31BBDE14ECC4871'
+  checksum       = '3099EBDDBB4296D73209DFE85F6E336B9418EEBE73634446D8FD2D5BFEB9B4FE'
 }
 
 Install-ChocolateyZipPackage @packageArgs
