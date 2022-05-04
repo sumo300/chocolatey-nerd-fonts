@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = ''
+  url            = 'https://github.com/adam7/delugia-code/releases/download/v2111.01/delugia-book.zip'
   checksumType   = 'sha256'
-  checksum       = ''
+  checksum       = '3EB0640C190A6B3DDBA1A9176E63C2CC0515D9EC6C5F54CB1C6355062CE179C2'
 }
 
 Install-ChocolateyZipPackage @packageArgs
