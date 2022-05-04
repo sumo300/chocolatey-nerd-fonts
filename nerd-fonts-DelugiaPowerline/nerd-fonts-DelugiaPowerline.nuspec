@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<!-- Do not remove this test for UTF-8: if â€œÎ©â€ doesnâ€™t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nerd-fonts-DelugiaPowerline</id>
-    <version>1.0.0</version>
+    <version>2111.01</version>
     <title>Nerd Fonts - Delugia Powerline</title>
     <owners>sumo300</owners>
     <authors>adam7</authors>
@@ -11,9 +11,11 @@
     <projectUrl>https://github.com/adam7/delugia-code</projectUrl>
     <iconUrl>https://www.nerdfonts.com/assets/img/nerd-fonts-logo.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular 'iconic fonts' such as Font Awesome ➶, Devicons ➶, Octicons ➶, and others.</description>
+    <description>Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons).
+
+</description>
     <summary>Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons).</summary>
-    <releaseNotes>https://github.com/adam7/delugia-code/releases</releaseNotes>
+    <releaseNotes>https://github.com/adam7/delugia-code/releases/tag/2111.01</releaseNotes>
     <copyright />
     <tags>nerd fonts glyphs icons ligatures</tags>
     <packageSourceUrl>https://github.com/sumo300/chocolatey-nerd-fonts</packageSourceUrl>
