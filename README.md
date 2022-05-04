@@ -5,4 +5,4 @@
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/sumo300](https://chocolatey.org/profiles/sumo300)
 
-This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages) for all of the available [Nerd Fonts](https://www.nerdfonts.com/)!
+This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages) for all of the available [Nerd Fonts](https://www.nerdfonts.com/) as well as separately published [Delugia Code Fonts](https://github.com/adam7/delugia-code)!

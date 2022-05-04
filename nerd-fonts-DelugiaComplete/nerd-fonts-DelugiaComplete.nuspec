@@ -2,9 +2,9 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>nerd-fonts-DelugiaBook</id>
+    <id>nerd-fonts-DelugiaComplete</id>
     <version>1.0.0</version>
-    <title>Nerd Fonts - Delugia Book</title>
+    <title>Nerd Fonts - Delugia Complete</title>
     <owners>sumo300</owners>
     <authors>adam7</authors>
     <licenseUrl>https://github.com/adam7/delugia-code/blob/master/LICENSE</licenseUrl>
