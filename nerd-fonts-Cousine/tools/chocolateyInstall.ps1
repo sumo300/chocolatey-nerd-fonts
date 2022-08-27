@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/2.2.0-RC/Cousine.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.1/Cousine.zip'
   checksumType   = 'sha256'
-  checksum       = '4DF55F26A451F252B31E965171A28B621E49A559FD179E29E2F66B2313A1ECAF'
+  checksum       = '0D20332FEB284938EDBDE0A376411E3CF1F7E5AD8AEEDB8E92B67D37EF534A9C'
 }
 
 Install-ChocolateyZipPackage @packageArgs

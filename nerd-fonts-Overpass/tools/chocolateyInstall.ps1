@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/2.2.0-RC/Overpass.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.1/Overpass.zip'
   checksumType   = 'sha256'
-  checksum       = 'EF70589AB7C70D8CB90D8527DE12126AD34C19B30981BBFE96F067DDED44E6F7'
+  checksum       = '2E875CDAD756E6E6333648CADBAE132B0B6A095378F5FD825B9EBB1FDAFEDC66'
 }
 
 Install-ChocolateyZipPackage @packageArgs

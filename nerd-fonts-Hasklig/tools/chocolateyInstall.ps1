@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/2.2.0-RC/Hasklig.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.1/Hasklig.zip'
   checksumType   = 'sha256'
-  checksum       = '2411C36A1080058B6A2AAF24E3DAB24797A1A8C04E53EC53DA62EDC5718879D9'
+  checksum       = 'CBB9B6F45C38C82D22C8E5130F93338B4663935277391D62E9234F4A1509F862'
 }
 
 Install-ChocolateyZipPackage @packageArgs

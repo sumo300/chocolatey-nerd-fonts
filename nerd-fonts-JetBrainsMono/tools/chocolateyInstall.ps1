@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/2.2.0-RC/JetBrainsMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.1/JetBrainsMono.zip'
   checksumType   = 'sha256'
-  checksum       = '9A69826832E1F01FFB1ACD07015F2AB255ED3A0756528DF0401C740C88DE785B'
+  checksum       = '59DD2DC001A54E6D1C6C233449C51094650C0EF1FE76C87A8524EB5DEF4F1DB8'
 }
 
 Install-ChocolateyZipPackage @packageArgs
