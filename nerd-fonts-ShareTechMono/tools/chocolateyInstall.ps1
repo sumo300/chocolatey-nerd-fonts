@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.1/ShareTechMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/ShareTechMono.zip'
   checksumType   = 'sha256'
-  checksum       = 'F0A1775DD558430BBA8FE073198CC9D1422D7FDCCDFEF53C4486BEF9B838AF27'
+  checksum       = '771344294DE74DD0B6139BED80DC9E1D8C6A0E4ADA3E2FE917AEF5C50FF270D4'
 }
 
 Install-ChocolateyZipPackage @packageArgs

@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.1/DroidSansMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/DroidSansMono.zip'
   checksumType   = 'sha256'
-  checksum       = '14E744AB94048937C1121556BA5AF42B30B08560A383D9AF9EC4D19C34B457D4'
+  checksum       = 'B6FEF0C6F789D2F317B192588B5D7AAB45AB7B237BD163DEB4ED18269AD62192'
 }
 
 Install-ChocolateyZipPackage @packageArgs

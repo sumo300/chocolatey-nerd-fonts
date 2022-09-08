@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.1/Lekton.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Lekton.zip'
   checksumType   = 'sha256'
-  checksum       = 'C5352199D51CC5BB0B8A6FF34A343A2EBE0729016E230396BE2AC595FECE477E'
+  checksum       = 'AACDBE805DE028E0D28E2B4971C28E7383EAF408EB09053E30FCB1A45B9B4F13'
 }
 
 Install-ChocolateyZipPackage @packageArgs
