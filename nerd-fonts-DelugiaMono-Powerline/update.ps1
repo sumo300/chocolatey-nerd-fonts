@@ -2,6 +2,7 @@ import-module au
 . $PSScriptRoot\..\_scripts\all.ps1
 
 $releases = 'https://github.com/adam7/delugia-code/releases'
+$latestRelease = 'https://api.github.com/repos/adam7/delugia-code/releases/latest'
 $readmes = 'https://raw.githubusercontent.com/adam7/delugia-code/v{0}/README.md'
 
 function global:au_SearchReplace {
@@ -22,12 +23,11 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 function global:au_AfterUpdate  { Set-DescriptionFromReadme -SkipFirst 2 -SkipLast 2 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $assets = (Invoke-RestMethod $latestRelease).assets
 
     $fontname = (get-item $pwd).Name -replace 'nerd-fonts-', ''
-    $re  = $fontName.ToLower().insert(7, '-') + ".zip"
-    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
-    $url = 'https://github.com' + $url
+    $file  = $fontName.ToLower().insert(7, '-') + ".zip"
+    $url = $assets | Where-Object Name -match $file | Select-Object -First 1 -expand browser_download_url
 
     $version = $url -split '/' | Select-Object -Last 1 -Skip 1
     $version = $version.Replace('v','')
