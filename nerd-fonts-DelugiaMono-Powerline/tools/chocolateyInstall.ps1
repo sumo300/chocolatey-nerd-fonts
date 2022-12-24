@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/adam7/delugia-code/releases/download/v2111.01/delugia-mono-powerline.zip'
+  url            = 'https://github.com/adam7/delugia-code/releases/download/v2111.01.1/delugia-mono-powerline.zip'
   checksumType   = 'sha256'
-  checksum       = '98A45E9B8DD91306DAF903BB28E3D4CC3602314772E3AEA4B8031CB1804874BB'
+  checksum       = 'FB0943639C75FE97F794C22919F1B7010EC7D7CC16183D62BDAA291974FED206'
 }
 
 Install-ChocolateyZipPackage @packageArgs
