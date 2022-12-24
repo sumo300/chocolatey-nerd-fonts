@@ -1,4 +1,5 @@
 $releases = 'https://github.com/ryanoasis/nerd-fonts/releases'
+$latestRelease = 'https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest'
 $readmes = 'https://raw.githubusercontent.com/ryanoasis/nerd-fonts/{0}/patched-fonts/{1}/readme.md'
 
 function Get-NerdFontSearchReplace() {
@@ -15,12 +16,11 @@ function Get-NerdFontSearchReplace() {
 }
 
 function Get-NerdFontLatest([string]$Path) {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $assets = (Invoke-RestMethod $latestRelease).assets
 
     $fontname = (get-item $Path).Name -replace 'nerd-fonts-', ''
-    $re  = $fontName + ".zip"
-    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
-    $url = 'https://github.com' + $url
+    $file  = $fontName + ".zip"
+    $url = $assets | Where-Object Name -match $file | Select-Object -First 1 -expand browser_download_url
 
     $version = $url -split '/' | Select-Object -Last 1 -Skip 1
     $version = $version.Replace('v','')
