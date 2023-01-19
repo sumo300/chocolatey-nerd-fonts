@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Gohu.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.1/Gohu.zip'
   checksumType   = 'sha256'
-  checksum       = '8797D419F5540F8B15C6BBAFB99D50BC372ED703BE188ED82AB26540FAD062DB'
+  checksum       = '809A3C956F8555758119DC52006C1BAEE8B11E8863A85E07EE934B237F4DED85'
 }
 
 Install-ChocolateyZipPackage @packageArgs

@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/DaddyTimeMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.1/DaddyTimeMono.zip'
   checksumType   = 'sha256'
-  checksum       = '1898E76CF209D07667F33286D1ED0231CC5DFEB50B151C1A6CC7660FDB6640EF'
+  checksum       = '706725C95D7281736758A2721D662F3C25EB616D3CD52DAC852769AD327641E2'
 }
 
 Install-ChocolateyZipPackage @packageArgs
