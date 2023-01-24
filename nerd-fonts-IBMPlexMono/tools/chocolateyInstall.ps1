@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.1/IBMPlexMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.2/IBMPlexMono.zip'
   checksumType   = 'sha256'
-  checksum       = '129B8BC4FB7F9AD68413932281C5C6C211CA0C5C34DC1987818E6BB181C7996F'
+  checksum       = '50EF6DAD91A7432B05DCD8E87BE0F825672158429BF1E9731021294700651EAA'
 }
 
 Install-ChocolateyZipPackage @packageArgs

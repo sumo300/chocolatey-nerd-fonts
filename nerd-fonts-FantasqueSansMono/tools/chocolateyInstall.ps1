@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.1/FantasqueSansMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.2/FantasqueSansMono.zip'
   checksumType   = 'sha256'
-  checksum       = '65DDCFF3C1A3B29B20D3D5F6AE02758952FE51FF5612BE93708487D9009D1272'
+  checksum       = '506D336172B58F83B574C957068BD63113D327431141F579A9EEC8A402DC4D25'
 }
 
 Install-ChocolateyZipPackage @packageArgs
