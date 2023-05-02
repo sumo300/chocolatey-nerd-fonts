@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/DejaVuSansMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/DejaVuSansMono.zip'
   checksumType   = 'sha256'
-  checksum       = '4A71551BB10785759EC033ED675D1EE3D751591AEE506F41F78C60EFFC33D4E2'
+  checksum       = 'AF406D84D6C52CB2251C96ABE090D16A97D31017EA2EE48489FC5F53804D6670'
 }
 
 Install-ChocolateyZipPackage @packageArgs

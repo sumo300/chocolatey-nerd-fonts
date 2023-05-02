@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/FiraCode.zip'
   checksumType   = 'sha256'
-  checksum       = '12C58F67731354F78E1A55030954BD326E380D1726C7F96F3DB1089D53ECF609'
+  checksum       = '705B7EAA5B687987CC0E65A961314250BE0CBDAC71E6AE5A8BE5C8064361F37C'
 }
 
 Install-ChocolateyZipPackage @packageArgs
