@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/OpenDyslexic.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/OpenDyslexic.zip'
   checksumType   = 'sha256'
-  checksum       = '0B8A768E95414E8D2FC7B0550226E65A84848705AAD000516CF12E731FFBF5BE'
+  checksum       = '0550274A409CA273EEE76352E6067F18540CFEE93DA2019CE4F36559AA767404'
 }
 
 Install-ChocolateyZipPackage @packageArgs
