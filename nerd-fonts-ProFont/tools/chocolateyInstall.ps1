@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/ProFont.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/ProFont.zip'
   checksumType   = 'sha256'
-  checksum       = '6C407FEDE4EBFB29B0913AB1A1B8E7E6CA5E57BEA2222C9C2F65FC7C61DF9445'
+  checksum       = 'A460B69CBA0A23A72C964C7E0BD0BA976B0AAD5FA6608AA498CEB79E0CF5CA49'
 }
 
 Install-ChocolateyZipPackage @packageArgs

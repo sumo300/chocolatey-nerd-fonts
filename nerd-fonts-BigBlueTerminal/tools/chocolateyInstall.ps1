@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/BigBlueTerminal.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/BigBlueTerminal.zip'
   checksumType   = 'sha256'
-  checksum       = 'D017DBAB1C1A79C2E9C7A79E494C66AE6FD8A18532CAF3217DE6E6E5AB45E344'
+  checksum       = 'FBA95367888C4ACAEAF6BA705BDE59BB535D3CC897F9F86F9E961F08723D289E'
 }
 
 Install-ChocolateyZipPackage @packageArgs
