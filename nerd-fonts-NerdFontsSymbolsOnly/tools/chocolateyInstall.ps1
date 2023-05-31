@@ -7,24 +7,20 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Gohu.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/NerdFontsSymbolsOnly.zip'
   checksumType   = 'sha256'
-  checksum       = 'D2A9E19555A043CD0CBD9F1E9E3274824A3442417B7434A4AD3A1C964957F655'
+  checksum       = '6DCDE1EC4A321E1142A75075B527C046DC288B35D4E5F991285902C9A4C04ECB'
 }
 
 Install-ChocolateyZipPackage @packageArgs
 
 # Install all Open Type Fonts in package
 Push-Location $toolsDir
-$fontList = Get-ChildItem "*.otf" -Recurse
+$fontList = Get-ChildItem *.otf
 
 # Get list of TrueType fonts instead if OpenType fonts are missing
 if ($fontList.Count -le 0) {
-  $fontList = Get-ChildItem "*.ttf" -Recurse
-}
-
-if ($fontList.length -eq 0) {
-  throw "No fonts to install!"
+  $fontList = Get-ChildItem *.ttf
 }
 
 # Installs fonts in Paths list and keeps track of the list for uninstall later

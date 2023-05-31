@@ -16,7 +16,11 @@ function Get-NerdFontSearchReplace() {
 }
 
 function Get-NerdFontLatest([string]$Path) {
-    $assets = (Invoke-RestMethod $latestRelease).assets
+    if ([string]::IsNullOrEmpty($Env:github_api_key)) {
+        $assets = (Invoke-RestMethod $latestRelease).assets        
+    } else {
+        $assets = (Invoke-RestMethod -Uri $latestRelease -Method Get -ContentType "application/json" -Headers @{Authorization = "token $Env:github_api_key"}).assets
+    }
 
     $fontname = (get-item $Path).Name -replace 'nerd-fonts-', ''
     $file  = $fontName + ".zip"
