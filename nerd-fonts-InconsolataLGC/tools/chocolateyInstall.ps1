@@ -7,19 +7,31 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/InconsolataLGC.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/InconsolataLGC.zip'
   checksumType   = 'sha256'
-  checksum       = '2D33C53AAC3426F6E2C2A2D697D53510075E5CBD4913095866B45C93CA95F30B'
+  checksum       = '001F4B4897EF690EA21A78D998EE502DA2D64ECA6877A3CA0A4EF42C1ADE8BA8'
 }
 
 Install-ChocolateyZipPackage @packageArgs
 
-# Install all Open Type Fonts in package
+# Install all OpenType Fonts in package
 Push-Location $toolsDir
-$fontList = Get-ChildItem *.otf
 
-# Get list of TrueType fonts instead if OpenType fonts are missing
+# Get list of all Windows Compatible OpenType Fonts in package
+$fontList = Get-ChildItem "*Windows Compatible*.otf"
+
 if ($fontList.Count -le 0) {
+  # Get list of all OpenType Fonts in package
+  $fontList = Get-ChildItem *.otf
+}
+
+# Use the TrueType fonts only if the OpenType files are missing
+if ($fontList.Count -le 0) {
+  # Get list of all Windows Compatible TrueType Fonts in package
+  $fontList = Get-ChildItem "*Windows Compatible*.ttf"
+}
+if ($fontList.Count -le 0) {
+  # Get list of all TrueType Fonts in package
   $fontList = Get-ChildItem *.ttf
 }
 

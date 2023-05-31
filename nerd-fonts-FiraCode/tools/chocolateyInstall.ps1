@@ -7,19 +7,31 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/FiraCode.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FiraCode.zip'
   checksumType   = 'sha256'
-  checksum       = '705B7EAA5B687987CC0E65A961314250BE0CBDAC71E6AE5A8BE5C8064361F37C'
+  checksum       = '532F6CC67EEF8BCEAD4C36B3484C323F7C546E1EDA3C5598617CF0E112345353'
 }
 
 Install-ChocolateyZipPackage @packageArgs
 
-# Install all Open Type Fonts in package
+# Install all OpenType Fonts in package
 Push-Location $toolsDir
-$fontList = Get-ChildItem *.otf
 
-# Get list of TrueType fonts instead if OpenType fonts are missing
+# Get list of all Windows Compatible OpenType Fonts in package
+$fontList = Get-ChildItem "*Windows Compatible*.otf"
+
 if ($fontList.Count -le 0) {
+  # Get list of all OpenType Fonts in package
+  $fontList = Get-ChildItem *.otf
+}
+
+# Use the TrueType fonts only if the OpenType files are missing
+if ($fontList.Count -le 0) {
+  # Get list of all Windows Compatible TrueType Fonts in package
+  $fontList = Get-ChildItem "*Windows Compatible*.ttf"
+}
+if ($fontList.Count -le 0) {
+  # Get list of all TrueType Fonts in package
   $fontList = Get-ChildItem *.ttf
 }
 

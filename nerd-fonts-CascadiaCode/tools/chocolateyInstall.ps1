@@ -7,19 +7,31 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/CascadiaCode.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/CascadiaCode.zip'
   checksumType   = 'sha256'
-  checksum       = '18692FC6F7829CB9FC71C1D3E409E2595539D310464D76523F27732107753DFC'
+  checksum       = '73B8FC00DDF76E46F1BF3496958665A7C9793B33485E67BD293DA100663F5A34'
 }
 
 Install-ChocolateyZipPackage @packageArgs
 
-# Install all Open Type Fonts in package
+# Install all OpenType Fonts in package
 Push-Location $toolsDir
-$fontList = Get-ChildItem *.otf
 
-# Get list of TrueType fonts instead if OpenType fonts are missing
+# Get list of all Windows Compatible OpenType Fonts in package
+$fontList = Get-ChildItem "*Windows Compatible*.otf"
+
 if ($fontList.Count -le 0) {
+  # Get list of all OpenType Fonts in package
+  $fontList = Get-ChildItem *.otf
+}
+
+# Use the TrueType fonts only if the OpenType files are missing
+if ($fontList.Count -le 0) {
+  # Get list of all Windows Compatible TrueType Fonts in package
+  $fontList = Get-ChildItem "*Windows Compatible*.ttf"
+}
+if ($fontList.Count -le 0) {
+  # Get list of all TrueType Fonts in package
   $fontList = Get-ChildItem *.ttf
 }
 

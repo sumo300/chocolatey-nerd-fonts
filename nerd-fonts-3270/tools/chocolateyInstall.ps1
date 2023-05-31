@@ -7,19 +7,31 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.0/3270.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/3270.zip'
   checksumType   = 'sha256'
-  checksum       = 'D2CC949A6EDE58B7E4CB381DFB832F451FBD3D42D2DCE01DBEECD4D7362C69D3'
+  checksum       = '81618BD995CA93A00348C7794D043F44739F65E87C326BCDAD21B4E1BE5212CE'
 }
 
 Install-ChocolateyZipPackage @packageArgs
 
 # Install all OpenType Fonts in package
 Push-Location $toolsDir
-$fontList = Get-ChildItem *.otf
 
-# Get list of TrueType fonts instead if OpenType fonts are missing
+# Get list of all Windows Compatible OpenType Fonts in package
+$fontList = Get-ChildItem "*Windows Compatible*.otf"
+
 if ($fontList.Count -le 0) {
+  # Get list of all OpenType Fonts in package
+  $fontList = Get-ChildItem *.otf
+}
+
+# Use the TrueType fonts only if the OpenType files are missing
+if ($fontList.Count -le 0) {
+  # Get list of all Windows Compatible TrueType Fonts in package
+  $fontList = Get-ChildItem "*Windows Compatible*.ttf"
+}
+if ($fontList.Count -le 0) {
+  # Get list of all TrueType Fonts in package
   $fontList = Get-ChildItem *.ttf
 }
 
