@@ -14,13 +14,22 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-# Install all OpenType Fonts in package
-Push-Location $toolsDir
-$fontList = Get-ChildItem *.otf
+# Get list of all Windows Compatible OpenType Fonts in package
+$fontList = Get-ChildItem -Filter "*Windows Compatible*.otf"
 
-# Get list of TrueType fonts instead if OpenType fonts are missing
 if ($fontList.Count -le 0) {
-  $fontList = Get-ChildItem *.ttf
+  # Get list of all OpenType Fonts in package
+  $fontList = Get-ChildItem -Filter *.otf
+}
+
+# Use the TrueType fonts only if the OpenType files are missing
+if ($fontList.Count -le 0) {
+  # Get list of all Windows Compatible TrueType Fonts in package
+  $fontList = Get-ChildItem "*Windows Compatible*.ttf"
+}
+if ($fontList.Count -le 0) {
+  # Get list of all TrueType Fonts in package
+  $fontList = Get-ChildItem -Filter *.ttf
 }
 
 # Installs fonts in Paths list and keeps track of the list for uninstall later
