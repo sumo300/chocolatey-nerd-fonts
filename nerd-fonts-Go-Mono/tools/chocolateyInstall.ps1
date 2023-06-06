@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Go-Mono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Go-Mono.zip'
   checksumType   = 'sha256'
-  checksum       = '9AC21958530B64E438E7BA9CD2C2CE26403632CAB2F067DA21522B2EEFD2B710'
+  checksum       = 'CAFEDF095FB1147CF9399E1189637AE810B1DAFE01ADBE380B491A8F1A9F29C5'
 }
 
 Install-ChocolateyZipPackage @packageArgs
