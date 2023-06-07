@@ -25,9 +25,9 @@ environment:
 
   # Mail credentials - for error notifications
   mail_user:
-    secure:  #https://ci.appveyor.com/tools/encrypt
+    secure:  D7ONGD8CW8l1UkPtLEzUOmOfHgx+31r/KRIXAOa7tTM=
   mail_pass:
-    secure:  #https://ci.appveyor.com/tools/encrypt
+    secure:  3TIQjWHbOrytuWIVK8pIF1WrapF65K0PwpY3QWESqP4=
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
@@ -102,12 +102,12 @@ artifacts:
 - path: Update-AUPackages.md
 - path: au_temp.zip
 
-#notifications:
-#- provider: Email
-#  to: $(mail_user)
-#  on_build_success: false
-#  on_build_failure: true
-#  on_build_status_changed: true
+notifications:
+- provider: Email
+  to: $(mail_user)
+  on_build_success: false
+  on_build_failure: true
+  on_build_status_changed: true
 
 #on_finish:
 #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
