@@ -1,21 +1,18 @@
 # AU template: https://github.com/majkinetor/au-packages-template
 
 version: '{build}'
-pull_requests:
-  do_not_increment_build_number: true
 max_jobs: 1
-image: Visual Studio 2017
 # History plugin requires complete log
 #clone_depth: 5
 branches:
   only:
   - master
-build:
-  verbosity: minimal
+#build:
+#  verbosity: minimal
 
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
-  au_version: master
+  au_version:
   au_push: true
   # Force test: use 1 to test all, or N to split testing into N groups
   au_test_groups: 1
