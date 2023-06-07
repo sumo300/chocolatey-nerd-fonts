@@ -27,11 +27,11 @@ function Get-NerdFontLatest([string]$Path) {
     $url = $assets | Where-Object Name -match $file | Select-Object -First 1 -expand browser_download_url
 
     $version = $url -split '/' | Select-Object -Last 1 -Skip 1
-    $version = $version.Replace('v','')
+    $versionNoV = $version.Replace('v','')
 
     # Download readme
     try {
-        $readmeUri = $readmes -f $version.Replace('v',''), $fontName
+        $readmeUri = $readmes -f $versionNoV, $fontName
         Invoke-WebRequest -Uri $readmeUri -OutFile $(Join-Path -Path $Path -ChildPath "FONT-README.md")
     } catch {
         # Ignore any errors
@@ -39,7 +39,7 @@ function Get-NerdFontLatest([string]$Path) {
 
     return @{
         URL32        = $url
-        Version      = $version.Replace('v','')
-        ReleaseNotes = "$releases/tag/${version}"
+        Version      = $versionNoV
+        ReleaseNotes = "$releases/tag/$version"
     }
 }
