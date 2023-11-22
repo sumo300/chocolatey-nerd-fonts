@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/IosevkaTerm.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.0/IosevkaTerm.zip'
   checksumType   = 'sha256'
-  checksum       = '4A87ADE2CC568BBD6EC1DD9D179675C53CFEC22865063520AE93817FBA83A9C9'
+  checksum       = '3381A0364A147F0D33CCEF30F233199890589D49E4CAB4CD9A79C53000B38ADD'
 }
 
 Install-ChocolateyZipPackage @packageArgs

@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Tinos.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.0/Tinos.zip'
   checksumType   = 'sha256'
-  checksum       = '286260AD5D13AC23DCFB51BAC780EDDED2F239B5C4FF7D180CB7EAA2D2E69FE9'
+  checksum       = 'DD47A45A1D534BC34635DF29A711B96B7C1B2422517BBAE6C9A5974AC5461CC9'
 }
 
 Install-ChocolateyZipPackage @packageArgs
