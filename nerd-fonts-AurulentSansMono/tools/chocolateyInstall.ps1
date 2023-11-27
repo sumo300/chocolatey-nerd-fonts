@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.0/AurulentSansMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/AurulentSansMono.zip'
   checksumType   = 'sha256'
-  checksum       = 'AE8EE19E6BB8913D8FCDB5F1445BEE5CA3EB7B971D89E545DFEA479DF137628A'
+  checksum       = 'E547C03338DEF637432011E95C01C7E3AEB1EF8A5B63A0423825C8A40E2ADBE7'
 }
 
 Install-ChocolateyZipPackage @packageArgs

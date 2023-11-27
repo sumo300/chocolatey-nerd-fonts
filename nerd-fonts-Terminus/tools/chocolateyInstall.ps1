@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.0/Terminus.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Terminus.zip'
   checksumType   = 'sha256'
-  checksum       = '8B9ABC2C478A21F1E1775C4F4CA6C754341AC66BADED97CB2B62BBB4D3967868'
+  checksum       = '98780383AD77AE59E86269FA121134267066697C88AE50E628BCB0F6327D4802'
 }
 
 Install-ChocolateyZipPackage @packageArgs
