@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.0/Meslo.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Meslo.zip'
   checksumType   = 'sha256'
-  checksum       = '804E8571926F9EB83B322BFD4C3FAEC4CA311ABEFFEEDD381EF59FD1F77FC34C'
+  checksum       = '7C1096E15649443BB0B177D4727E8FBAF032EBFAD11741838D4572E33487A2F7'
 }
 
 Install-ChocolateyZipPackage @packageArgs
