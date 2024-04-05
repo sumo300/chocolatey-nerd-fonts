@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Lilex.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Lilex.zip'
   checksumType   = 'sha256'
-  checksum       = '334FDC1EC134393BCB2A1BDD27FA101BB363805D167E25436FDAAB43CEC14C3A'
+  checksum       = '6DB19752E61C100CD6E3B7E2FBC01CEB18A0E3F3DF4E60509A9FF72A04F5709B'
 }
 
 Install-ChocolateyZipPackage @packageArgs

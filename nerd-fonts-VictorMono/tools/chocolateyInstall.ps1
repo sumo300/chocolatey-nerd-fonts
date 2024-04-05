@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/VictorMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/VictorMono.zip'
   checksumType   = 'sha256'
-  checksum       = '2B3282E1743AAB07664B9DCE46F09322BD473BEB219B8D08774A8328210545AD'
+  checksum       = '0CC0A89BB5F48A822C719E47E004DB4E28D23C3233C6143FBD32BA02EE9CECBE'
 }
 
 Install-ChocolateyZipPackage @packageArgs

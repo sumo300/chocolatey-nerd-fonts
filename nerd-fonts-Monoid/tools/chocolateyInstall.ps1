@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Monoid.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Monoid.zip'
   checksumType   = 'sha256'
-  checksum       = '3F3704711320B7B71EB780AE762BECC1C882C4ED698C00AEC7B2ADAE46F0FA38'
+  checksum       = '45D0D64FB7FC28393FB24CAD13D8838C1B3F3C282E4025CFECFD7DD8402045A9'
 }
 
 Install-ChocolateyZipPackage @packageArgs

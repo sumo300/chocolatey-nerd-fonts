@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/AnonymousPro.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/AnonymousPro.zip'
   checksumType   = 'sha256'
-  checksum       = '6B16EB58B312E4EF54837A610315B35CE956918126613898E306B4EFD0BD1C21'
+  checksum       = 'D4DF266159BCFEB4AEDC3EB78373D0140D6F5BF4ED8E08D5E068F679DA57E374'
 }
 
 Install-ChocolateyZipPackage @packageArgs
