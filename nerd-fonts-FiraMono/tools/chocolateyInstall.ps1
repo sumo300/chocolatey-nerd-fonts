@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/FiraMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraMono.zip'
   checksumType   = 'sha256'
-  checksum       = '1544C5012AC3E16C20DD00AD5321ABA6B8555F767CDFCC679FD50BFE6D2AA5AB'
+  checksum       = '9F739A71D5B687325127B6076292BAB1597EFBA188603B4F8CFCDFDF82E9E6FB'
 }
 
 Install-ChocolateyZipPackage @packageArgs

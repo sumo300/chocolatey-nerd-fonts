@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/HeavyData.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/HeavyData.zip'
   checksumType   = 'sha256'
-  checksum       = '611EF699B3C0966F50DE8C1AF5EC72BD63A8681E4E96D5AFB425DD23ECB81992'
+  checksum       = 'EC1B686BC31280E2596137C42907F4D924F6D0C22BA6CB2F2B84331FD6DB9639'
 }
 
 Install-ChocolateyZipPackage @packageArgs

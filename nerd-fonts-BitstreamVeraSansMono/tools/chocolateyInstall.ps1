@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/BitstreamVeraSansMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/BitstreamVeraSansMono.zip'
   checksumType   = 'sha256'
-  checksum       = '283BFA5A0209176CE4C8DE3B5D3B0E769447B6948C9EC3D38B2AD6EC96EA103F'
+  checksum       = '6A5D20C72F068A65EBF6E1CF1E168CED5D8C78D703D90B6041A5232DB8111205'
 }
 
 Install-ChocolateyZipPackage @packageArgs

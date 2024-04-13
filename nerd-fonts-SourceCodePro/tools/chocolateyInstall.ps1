@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/SourceCodePro.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/SourceCodePro.zip'
   checksumType   = 'sha256'
-  checksum       = 'AB3EF453FBDDD71486FAD378D5F1697C5D9FF5871959E792BCA52B1353E0815D'
+  checksum       = 'DCBA53BE6A360AAC5BD1424AC4AB316C5401F7E5A1FA28BE4FA626CE07A30C0F'
 }
 
 Install-ChocolateyZipPackage @packageArgs

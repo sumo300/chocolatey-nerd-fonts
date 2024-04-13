@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/Noto.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Noto.zip'
   checksumType   = 'sha256'
-  checksum       = 'F3B1275655212A6D4956FD76FFEBD42D425628B78A39EE3A2E0F8517535CC180'
+  checksum       = 'B8A6E1FCAF557A404BE47250D419EE4234AD8930E9D2A405C248FA7F08AB5C04'
 }
 
 Install-ChocolateyZipPackage @packageArgs

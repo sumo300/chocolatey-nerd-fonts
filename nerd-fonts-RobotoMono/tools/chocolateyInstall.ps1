@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/RobotoMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/RobotoMono.zip'
   checksumType   = 'sha256'
-  checksum       = '396EC1E33D496EF1AD055D4E1EE0495004A597C9CD172810DA53FEA8C7E5DFC1'
+  checksum       = '2AB7ECFDDB21EC9A70D6EA7FD8E6328FFFE7E10FA6B7A864208A9C5208175A81'
 }
 
 Install-ChocolateyZipPackage @packageArgs
