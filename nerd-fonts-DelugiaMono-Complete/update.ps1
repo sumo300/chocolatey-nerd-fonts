@@ -40,6 +40,14 @@ function global:au_GetLatest {
         # Ignore any errors
     }
 
+    # Fix the version returned as Choco requires Major.Minor.Build semver
+    $semver = [version]$version
+
+    if ($semver.Build -eq -1) {
+        $version = $semver.ToString() + ".0"
+    }
+
+
     return @{
         URL32        = $url
         Version      = $version.Replace('v','')
