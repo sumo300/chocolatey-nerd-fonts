@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/EnvyCodeR.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/EnvyCodeR.zip'
   checksumType   = 'sha256'
-  checksum       = '6D25B08438ADBA6E9FFC5674D063389A61E62D5542578B5E907C1D462881E9A3'
+  checksum       = '1404D84593F2B9FAD926443C4C57F8262E60D7C77F63FA38F950B39A51BC16F7'
 }
 
 Install-ChocolateyZipPackage @packageArgs
