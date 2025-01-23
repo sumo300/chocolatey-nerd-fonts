@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaCode.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CascadiaCode.zip'
   checksumType   = 'sha256'
-  checksum       = '58CE324C5C8400D14586B968C6FEA772B4AE09FE108415384B60DC5E063F3658'
+  checksum       = '045C12B3302989C291F92D0BA3BFCB6D37F633711FB8F22D822ACB923BFF0C94'
 }
 
 Install-ChocolateyZipPackage @packageArgs

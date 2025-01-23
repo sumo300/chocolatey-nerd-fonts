@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/IntelOneMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/IntelOneMono.zip'
   checksumType   = 'sha256'
-  checksum       = '3A8170FFCF75B3B421D4D094701934EA514BC5B56763C5095240053CF278CA6C'
+  checksum       = '0A935653D90610769E79590343EFDEC7111531EFAA9AABCA18262E56046958CE'
 }
 
 Install-ChocolateyZipPackage @packageArgs
