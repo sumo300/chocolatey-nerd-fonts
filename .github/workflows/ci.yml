@@ -13,10 +13,30 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  pre_job:
+    # continue-on-error: true # Uncomment once integration is finished
+    runs-on: windows-latest
+    # Map a step output to a job output
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@v5
+        with:
+          # All of these options are optional, so you can remove them if you are happy with the defaults
+          concurrent_skipping: 'never'
+          skip_after_successful_duplicate: 'true'
+          paths_ignore: '["**/README.md", "**/docs/**", "**/LICENSE"]'
+          do_not_skip: '["pull_request", "workflow_dispatch", "schedule"]'
+
   # This workflow contains a single job called "ci"
   ci:
+    needs: pre_job
+    if: needs.pre_job.outputs.should_skip != 'true'
+
     # The type of runner that the job will run on
     runs-on: windows-latest
 
