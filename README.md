@@ -1,6 +1,6 @@
 # Nerd Fonts Chocolatey Packages
 
-[![](https://ci.appveyor.com/api/projects/status/github/sumo300/chocolatey-nerd-fonts?svg=true)](https://ci.appveyor.com/project/sumo300/chocolatey-nerd-fonts)
+[![CI](https://github.com/sumo300/chocolatey-nerd-fonts/actions/workflows/ci.yml/badge.svg)](https://github.com/sumo300/chocolatey-nerd-fonts/actions/workflows/ci.yml)
 [Update status](https://gist.github.com/sumo300/658441c4e182965a9488e81886b0c549)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/sumo300](https://chocolatey.org/profiles/sumo300)
