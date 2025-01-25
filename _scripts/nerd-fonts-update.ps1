@@ -1,6 +1,6 @@
 $releases = 'https://github.com/ryanoasis/nerd-fonts/releases'
 $latestRelease = 'https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest'
-$readmes = 'https://raw.githubusercontent.com/ryanoasis/nerd-fonts/{0}/patched-fonts/{1}/readme.md'
+$readmes = 'https://raw.githubusercontent.com/ryanoasis/nerd-fonts/refs/tags/{0}/patched-fonts/{1}/README.md'
 
 function Get-NerdFontSearchReplace() {
     return @{
@@ -31,7 +31,7 @@ function Get-NerdFontLatest([string]$Path) {
 
     # Download readme
     try {
-        $readmeUri = $readmes -f $versionNoV, $fontName
+        $readmeUri = $readmes -f $version, $fontName
         Invoke-WebRequest -Uri $readmeUri -OutFile $(Join-Path -Path $Path -ChildPath "FONT-README.md")
     } catch {
         # Ignore any errors
