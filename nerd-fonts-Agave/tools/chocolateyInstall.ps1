@@ -36,6 +36,14 @@ if ($fontList.Count -le 0) {
   $fontList = Get-ChildItem *.ttf
 }
 
+if (Test-Path -Path "$env:TEMP\$packageName.upgrade") {
+  $fileNamesList = $fontList | Select-Object -ExpandProperty Name
+
+  # Uninstalls fonts that were installed by this package
+  $uninstallCount = Uninstall-ChocolateyFont $fileNamesList -Multiple
+  Write-Host "$uninstallCount fonts uninstalled"
+}
+
 # Installs fonts in Paths list and keeps track of the list for uninstall later
 $installCount = Install-ChocolateyFont -Paths $fontList -Multiple
 Write-Host "$installCount fonts installed"
