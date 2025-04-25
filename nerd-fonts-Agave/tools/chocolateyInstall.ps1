@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Agave.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip'
   checksumType   = 'sha256'
-  checksum       = '42EC90EA46D0FFDAE4051D42638F0BFFAF4A75B4AB82A55B4484DB48CD7DD85B'
+  checksum       = 'CDD66F1719DA8E22F9DCEC0981A226BB23B7BF1C93A836F40118665B70982C8D'
 }
 
 Install-ChocolateyZipPackage @packageArgs
