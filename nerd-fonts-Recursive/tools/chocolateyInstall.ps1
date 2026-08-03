@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Recursive.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Recursive.zip'
   checksumType   = 'sha256'
-  checksum       = '0BD832ED9DE2B5955208494808E69528CFC471CC03EEA850ECFBF8E3B1ED702F'
+  checksum       = '564D2C44E5444742A27A579779E43C20F7447BE84A442AB65EC42BD46077444E'
 }
 
 Install-ChocolateyZipPackage @packageArgs

@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Ubuntu.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Ubuntu.zip'
   checksumType   = 'sha256'
-  checksum       = 'AD18DE7F0CCF503123652C92EB8BCB08B53A54153B467AA46A1C58F04A4D4915'
+  checksum       = 'EEB1999A9D575E91055A53156B039DDED874D6F3955FF13B9B1B9AC5259C4ABB'
 }
 
 Install-ChocolateyZipPackage @packageArgs

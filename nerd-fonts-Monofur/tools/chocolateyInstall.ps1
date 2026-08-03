@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Monofur.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Monofur.zip'
   checksumType   = 'sha256'
-  checksum       = '3A1E6A3B85821A61C8D42D98BC42F181CF1FA7994CDBA7068BCF3F6DEC249995'
+  checksum       = '1F9FF2A43274D21509320148A7545D6FB8954F271143D85C348D7A5A7C260CBE'
 }
 
 Install-ChocolateyZipPackage @packageArgs

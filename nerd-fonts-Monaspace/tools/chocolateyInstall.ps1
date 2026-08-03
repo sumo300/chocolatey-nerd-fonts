@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Monaspace.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Monaspace.zip'
   checksumType   = 'sha256'
-  checksum       = '032C065C53FE08C633EEFC7B866B32595316C3563626145480D612ACEEF93E62'
+  checksum       = '30F8BE0241F15616A0A0222334FD55B7F5DE02158F47181D63E6A4EC5389BC0E'
 }
 
 Install-ChocolateyZipPackage @packageArgs

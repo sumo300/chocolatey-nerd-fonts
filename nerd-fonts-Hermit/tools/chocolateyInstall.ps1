@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hermit.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Hermit.zip'
   checksumType   = 'sha256'
-  checksum       = '123B73CBE9C775FF60B2C878E49A82FD7D4AA95B200BD2B5063FC38E888765A8'
+  checksum       = 'EEA1B24C622F915BC9900173964F0EFBF863C0DF94812803D3BBB42B6676EF1A'
 }
 
 Install-ChocolateyZipPackage @packageArgs

@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Arimo.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Arimo.zip'
   checksumType   = 'sha256'
-  checksum       = 'ED6F9667A581D3406063110A330A98CF5B9F618031CCE606DB798944056604C4'
+  checksum       = 'FA6679F4A0B34F88F02B15B41A9F050F220AF91A7868774A32F53AC32120864F'
 }
 
 Install-ChocolateyZipPackage @packageArgs

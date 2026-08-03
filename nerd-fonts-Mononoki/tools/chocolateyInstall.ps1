@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Mononoki.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/Mononoki.zip'
   checksumType   = 'sha256'
-  checksum       = '6C02113312B8F9BE9888AFFC2DC13ED5F118A28786BB8B9C54306169CEDA967D'
+  checksum       = 'DDC51A618685578C78B5AD431FA592475A46430257007C9F8BE4CF7904DB2E27'
 }
 
 Install-ChocolateyZipPackage @packageArgs

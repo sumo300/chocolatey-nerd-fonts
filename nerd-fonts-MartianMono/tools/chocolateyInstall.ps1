@@ -7,9 +7,9 @@ $packageArgs = @{
   softwareName   = $packageName
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/MartianMono.zip'
+  url            = 'https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.0/MartianMono.zip'
   checksumType   = 'sha256'
-  checksum       = '76EFE59051015CD688D027995C0BCA6F365C75438025BA065AC9C744E82C8095'
+  checksum       = 'ACC4CFC26D4D4934EC0C0239BF456469768DC114174A0D38660A4E6C210A3B75'
 }
 
 Install-ChocolateyZipPackage @packageArgs
